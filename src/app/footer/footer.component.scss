@@ -36,7 +36,9 @@ p {
 }
 
 .footerText {
+    color: aqua;
     font-size: 20px;
+    text-decoration: none;
     &:hover {
         cursor: pointer;
         text-decoration: underline;
