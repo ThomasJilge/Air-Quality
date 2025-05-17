@@ -1,0 +1,56 @@
+.air-quality-container {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.air-quality-container h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.location-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.location-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2980b9;
+}
+
+.measurements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.measurement-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.measurement-item:last-child {
+  border-bottom: none;
+}
+
+.parameter {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.value {
+  color: #27ae60;
+}
