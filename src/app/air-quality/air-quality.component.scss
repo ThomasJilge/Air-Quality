@@ -1,56 +1,52 @@
-.air-quality-container {
-  max-width: 600px;
-  margin: 1rem auto;
-  padding: 1rem;
-  background-color: #f7f9fc;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-
-.air-quality-container h3 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #2c3e50;
-}
-
-.location-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.location-card h4 {
-  margin: 0 0 0.5rem 0;
-  color: #2980b9;
-}
-
-.measurements-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.measurement-item {
+.airQualityContainerOne {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 0.25rem 0;
-  border-bottom: 1px solid #eee;
-  font-size: 0.9rem;
+  justify-content: center;
 }
 
-.measurement-item:last-child {
-  border-bottom: none;
-}
+  .airQualityContainerTwo {
+    max-width: 1440px;
+    width: 100%;
+    height: 350px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.parameter {
-  font-weight: 600;
-  color: #34495e;
-}
+  h2 {
+    font-size: 32px;
+  }
 
-.value {
-  color: #27ae60;
-}
+  .airQualityContainerThree {
+    width: 400px;
+    height: 150px;
+    background-color: green;
+    position: relative;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    border-radius: 10px;
+    >.airQualityContainerFour {
+      display: flex;
+      align-items: center;
+    >.containerAQI {
+      width: 75px;
+      height: 75px;
+      background-color: red;
+      margin: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+    >.spanOne {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+    }
+  }
+
+  .spanStrength {
+    font-weight: 600;
+  }
