@@ -1,33 +1,34 @@
 <div class="airQualityContainerOne">
   <div class="airQualityContainerTwo">
     <div class="h2Container">
-      <h2>Air quality in Bangkok</h2>
-      <span class="h2Span">(Ortszeit: 23.05.2025, 20:21 Uhr)</span>
+      <h2>Luftqualität in {{ city }}</h2>
+      <!-- Optional: kannst du hier aktuelle Zeit dynamisch einfügen -->
+      <span class="h2Span">(Ortszeit: {{ currentTime }})</span>
     </div>
     <div class="airQualityContainerThree">
       <div class="airQualityContainerFour">
-      <div class="containerAQI">
-        <span class="spanOne">155</span>
-        <span clas="spanTwo">US AQI</span>
+        <div class="containerAQI">
+          <p class="spanOne">
+            US AQI: {{ airData?.results?.[0]?.measurements?.[0]?.value ?? 'Daten nicht verfügbar' }}
+          </p>
+        </div>
+        <div class="containerStrength">
+          <!-- Stärke dynamisch bestimmen, Beispiel: 'High' -->
+          <span class="spanStrength">High</span>
+        </div>
+        <div class="test">
+          <img class="placeholderIMG" src="placeholder.png" alt="Luftqualität Bild" />
+        </div>
       </div>
-      <div class="containerStrength">
-        <span class="spanStrength">High</span>
+      <div class="containerDiv"></div>
+      <div class="airQualityContainerFive">
+        <div class="airQualityContainerSix">
+          <!-- Beispielwerte, hier kannst du weitere Messwerte aus airData einfügen -->
+          <div class="info">32°</div>
+          <div class="info">15 km/h</div>
+          <div class="info">70%</div>
+        </div>
       </div>
-      <div class="test">
-        <img class="placeholderIMG" src="placeholder.png" alt="">
-      </div>
-    </div>
-    <div class="containerDiv"></div>
-    <div class="airQualityContainerFive">
-      <div class="airQualityContainerSix">
-        <div class="info">32°</div>
-        <div class="info">15 km/h</div>
-        <div class="info">70%</div>
-      </div>
-    </div>
     </div>
   </div>
-  
 </div>
-
-
