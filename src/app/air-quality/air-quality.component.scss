@@ -2,12 +2,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 20px;
 }
 
   .airQualityContainerTwo {
     max-width: 1440px;
     width: 100%;
-    height: 350px;
+    // height: 350px;
     // background-color: aqua;
     display: flex;
     justify-content: space-between;
@@ -24,7 +26,7 @@
     background-color: rgb(242, 92, 92);
     position: relative;
     right: 20px;
-    top: 20px;
+    // top: 20px;
     display: flex;
     border-radius: 10px;
     flex-direction: column;

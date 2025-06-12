@@ -1,15 +1,15 @@
 <div class="airQualityContainerOne">
   <div class="airQualityContainerTwo">
     <div class="h2Container">
-      <h2>Luftqualität in {{ city }}</h2>
+      <h2>Airquality in {{ city }}</h2>
       <!-- Optional: kannst du hier aktuelle Zeit dynamisch einfügen -->
-      <span class="h2Span">(Ortszeit: {{ currentTime }})</span>
+      <span class="h2Span">(Local time: {{ currentTime }})</span>
     </div>
     <div class="airQualityContainerThree">
       <div class="airQualityContainerFour">
         <div class="containerAQI">
           <p class="spanOne">
-            US AQI: {{ airData?.results?.[0]?.measurements?.[0]?.value ?? 'Daten nicht verfügbar' }}
+            US AQI: {{ airData?.results?.[0]?.measurements?.[0]?.value ?? 'Data not available' }}
           </p>
         </div>
         <div class="containerStrength">
